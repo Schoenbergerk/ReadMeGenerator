@@ -48,14 +48,14 @@ const questions = [
     },
     {
         type: 'input',
-        message:'What is your email address?',
+        message: 'What is your email address?',
         name: 'email',
     },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, err =>{
+    fs.writeFile(fileName, data, err => {
         if (err) {
             console.error(err);
         }
@@ -65,11 +65,11 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-    .then(function(responses){
-        console.log("Creating ReadMe.md...");
-        let markdown = generateMarkdown(responses)
-        writeToFile("ReadMe.md", markdown)
-    })
+        .then(function (responses) {
+            console.log("Creating ReadMe.md...");
+            let markdown = generateMarkdown(responses)
+            writeToFile("ReadMe.md", markdown)
+        })
 }
 
 
