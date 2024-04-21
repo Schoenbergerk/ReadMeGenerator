@@ -38,22 +38,22 @@ function generateMarkdown(data) {
   - [Contact me](#email)
   
   
-  # Description:
+  # Description
   ${data.description}
 
-  # Installation Instructions:
+  # Installation Instructions
   ${data.instructions}
 
-  # Usage:
+  # Usage
   ${data.usage}
 
-  # Tests:
+  # Tests
   ${data.test}
 
-  # License:
+  # License
   ${data.license}
 
-  # Contributing Guidelines:
+  # Contributing Guidelines
   ${data.contribution}
 
   # Contact Me
